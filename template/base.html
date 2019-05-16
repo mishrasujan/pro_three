@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" text="text/css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">Navbar</a>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item active">
+<a class="nav-link" href="{% url 'app1index' %}">App 1 </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="{% url 'app2index' %}">App 2</a>
+</li>
+</ul>
+</div>
+</nav>
+{% block body_block%}
+{% endblock %}
+</body>
+</html>
+
